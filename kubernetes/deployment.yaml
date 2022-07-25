@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: djangoapp
+  labels:
+    app: hello_world
+spec:
+  selector:
+    matchLabels:
+      app: hello_world
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello_world
+    spec:
+      containers:
+      - name: manpreetkaur
+        image: thisismanpreetkaur/mkm-python-django-app:latest
+        ports:
+        - containerPort: 8000

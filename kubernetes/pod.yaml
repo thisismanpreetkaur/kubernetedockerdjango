@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: manpreet
+
+spec:
+  containers:
+  - name: manpreet
+    image: mkddapp
+    ports:
+    - containerPort: 80
