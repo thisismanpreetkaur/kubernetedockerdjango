@@ -6,6 +6,6 @@ metadata:
 spec:
   containers:
   - name: manpreet
-    image: mkddapp
+    image: mkddthisismanpreetkaur/mkm-python-django-app:latestapp
     ports:
     - containerPort: 80
